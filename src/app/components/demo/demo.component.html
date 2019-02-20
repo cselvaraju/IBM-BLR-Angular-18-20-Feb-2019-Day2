@@ -1,0 +1,20 @@
+<div>
+  <h3>Demo Component</h3>
+  My Favourite Actor: {{name}}
+  <br>
+  <button (click)="btnClicked($event)">Click Me!!</button>
+  <div>
+    List of Actors
+    <ul>
+      <li *ngFor="let actor of actorList">
+        Name: {{actor.name}} - City: {{actor.city}}
+      </li>
+    </ul>
+  </div>
+  <div>
+    Enter some text:
+    <input type="text" [(ngModel)]="text">
+    <br>
+    Your text is: {{text}}
+  </div>
+</div>
